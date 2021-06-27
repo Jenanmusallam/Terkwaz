@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body,
+html {
+  height: 100%;
+}
+.contener {
+  background: url("./rm266-nunny-05.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.upper {
+  padding: 4rem;
+}
+h2 {
+  margin: auto;
+  color: rgba(0, 0, 0, 0.733);
+  text-shadow: 2px 2px 2px beige;
+  font-size: 3em;
+}
+.center {
+  height: 50vh;
+  padding: 3rem;
+  background-color: rgba(188, 143, 143, 0.63);
+}
+input {
+  padding: 0.5rem;
+  border-radius: 0 20px;
+  font-size: 20px;
+  border-color: rgb(163, 17, 46);
+  margin: 1.5rem;
+}
+button {
+  border-radius: 50px;
+  border-color: rgb(163, 17, 46);
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(163, 17, 46);
+  background-color: rgb(199, 95, 95);
+  padding: 0.7rem;
+}
+#dataConver {
+  color: crimson;
+  text-shadow: 2px 2px 2px beige;
+  font-size: 3em;
+  font-family: cursive;
+}
