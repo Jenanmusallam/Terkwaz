@@ -1,6 +1,8 @@
+const convertBtn = document.getElementById('convert-btn');
+
 // Convert variables names from
-function convertVrabel() {
-  let myArray = document.getElementById("convertVrb").value;
+const convertVrabel = () => {
+  const myArray = document.getElementById("convertVrb").value;
   let newArray = '';
   const indexes = [];
   for (let value of myArray) {
@@ -22,5 +24,4 @@ function convertVrabel() {
   console.log("inexes: ", indexes);
   document.getElementById("dataConver").innerHTML = newArray;
 }
-// convertVrabel("the-first-assignment"); // OutPut:theFirstAssignment
-// convertVrabel("the_first_assignment"); // OutPut:theFirstAssignment
+convertBtn.addEventListener('click', convertVrabel);
