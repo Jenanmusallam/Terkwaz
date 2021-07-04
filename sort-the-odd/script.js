@@ -7,9 +7,9 @@ const oddFun = (array) => {
     let newArray = [];
     array.forEach(val => {
         if (val % 2)
-            newArray += ` ` + numberOdd.shift();
+            newArray.push(` ` + numberOdd.shift());
         else
-            newArray += ` ` + val;
+            newArray.push(` ` + val);
     })
     return newArray;
 }
