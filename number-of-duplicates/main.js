@@ -1,13 +1,13 @@
 const numberDup = document.querySelector('.number-duplicate').textContent = "Number of Duplicates";
-const scores = [1, 1, 2, 3, 5, 5, 5, "jenan", "jenan"];  //1=>2   3=>1  5=>3  jenan =>2
+// const scores = [1, 1, 2, 3, 5, 5, 5, "jenan", "jenan"];  //1=>2   3=>1  5=>3  jenan =>2
 
-const countOccurrences = (arr, val) => {
-    return arr.reduce((acc, elem) => {
-        return (val === elem ? acc + 1 : acc)
-    }, 0);
-}
-// only using one number seach
-console.log(countOccurrences(scores, 1));
+// const countOccurrences = (arr, val) => {
+//     return arr.reduce((acc, elem) => {
+//         return (val === elem ? acc + 1 : acc)
+//     }, 0);
+// }
+// // only using one number seach
+// console.log(countOccurrences(scores, 1));
 
 
 
@@ -17,8 +17,7 @@ console.log(countOccurrences(scores, 1));
 // const myArray = [99, 1, 2, 3, 5, 5, 5, "jenan", "jenan"];  //1=>2   3=>1  5=>3  jenan =>2
 // const numberOfDuplicate = myArray => {
 //     const myObject = {};
-//     myArray[2]; // 1 * x
-//        myArray.forEach((value) => { // n * x , x = execution time
+//     myArray.forEach((value) => { // n * x , x = execution time
 //         myObject[value] = 0;
 //         let count = 0;
 //         myArray.forEach((valueNew) => {
@@ -32,3 +31,22 @@ console.log(countOccurrences(scores, 1));
 //     document.querySelector('.number').textContent = [myArray];
 //     document.querySelector('.numberObject').textContent = JSON.stringify(myObject);
 // }
+
+const myArray = [1, 1, 2, 3, 5, 5, 5, "jenan", "jenan"];  //1=>2 2=>1  3=>1  5=>3  jenan =>2
+const numberOfDuplicate = myArray => {
+    const myObject = {};
+    myArray.forEach((value) => {
+        myObject[value] = 0;
+        const x = value;
+        let count = 0;
+        myArray.forEach((valueNew) => {
+            if (valueNew == x) {
+                count++;
+            }
+        });
+        myObject[value] = count;
+    })
+    document.querySelector('.number').textContent = [myArray];
+    document.querySelector('.numberObject').textContent = JSON.stringify(myObject);
+}
+numberOfDuplicate(myArray);
