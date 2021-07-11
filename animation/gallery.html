@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignement Five</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./terkwaz.png" type="image/x-icon">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 900px;
+        }
+
+        header {
+            background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+            text-align: center;
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 85% 85% / 30%;
+        }
+
+        header .overlay {
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+            color: #FFF;
+            text-shadow: 1px 1px 1px #333;
+            background-image: linear-gradient(135deg, #ffee0569 10%, #fd5e086b 100%);
+
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 80px;
+            margin: 3rem;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="./index.html" class="logo"><img src="./terkwaz.png" class="logoImage"></a>
+        <div class="header-right">
+            <a href="./index.html">Home</a>
+            <a href="./index.html#About">About</a>
+            <a href="./index.html#Portfolio">Portfolio</a>
+            <a href="./index.html#Gallery">Gallery</a>
+            <a class="active" href="./gallery.html">Photos</a>
+        </div>
+    </div>
+    <div class="contener" data-aos="zoom-in-down">
+        <header>
+            <div class="overlay">
+                <h1>Gallery The Best</h1>
+            </div>
+        </header>
+
+        <div class="row" data-aos="zoom-in-right">
+            <div class="column">
+                <img src="https://cdn.pixabay.com/photo/2020/04/19/12/26/sewing-kit-5063401_960_720.jpg"
+                    style="width:100%">
+                <img src="https://cdn.pixabay.com/photo/2017/08/27/23/29/kermit-2687975_960_720.jpg" style="width:100%">
+                <img src="./gallery/(1).jpeg" style="width:100%">
+                <img src="./gallery/(1).JPG" style="width:100%">
+                <img src="./gallery/(1).PNG" style="width:100%">
+                <img src="./gallery/(2).HEIC" style="width:100%">
+                <img src="./gallery/(2).jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="./gallery/(2).JPG" style="width:100%">
+                <img src="./gallery/(3).jpeg" style="width:100%">
+                <img src="./gallery/(3).JPG" style="width:100%">
+                <img src="./gallery/(4).jpeg" style="width:100%">
+                <img src="./gallery/(4).JPG" style="width:100%">
+                <img src="./gallery/(5).jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="./gallery/(5).JPG" style="width:100%">
+                <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1517685704588-0935ac847be7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1508020963102-c6c723be5764?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1477257193776-b8b1015483b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1496670013738-4f730477bfdb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    style="width:100%">
+            </div>
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1514195037031-83d60ed3b448?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1565799515768-2dcfd834625c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=792&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1496594461095-b09456fcba83?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1569742152946-b802f045df68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1556626723-200fd7c9bc66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1616004380351-15b246304723?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                    style="width:100%">
+                <img src="https://images.unsplash.com/photo-1518568740560-333139a27e72?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                    alt="" srcset="" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            delay: 0,
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>

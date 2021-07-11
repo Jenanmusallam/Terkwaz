@@ -3,7 +3,7 @@ const Two = document.querySelector('.two');
 const Three = document.querySelector('.three');
 const oddFun = (array) => {
     // filter all array and ordering number of odd
-    const numberOdd = array.filter((a) => a % 2).sort((a, b) => a - b);
+    const numberOdd = array.filter((a) => a % 2).sort((a, b) => a - b);//3,5
     let newArray = [];
     array.forEach(val => {
         if (val % 2)
