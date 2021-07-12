@@ -357,33 +357,6 @@ html {
     top: 90%;
   }
 }
-
-@media screen and (max-width: 700px) {
-  .contener .about,
-  .contener .portfolio {
-    flex-direction: column;
-  }
-  .contener .about img,
-  .contener .portfolio img {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .header {
-    justify-content: space-between;
-  }
-  .burderBtn {
-    display: block;
-  }
-  .header-right {
-    display: none;
-  }
-  .header a {
-    display: block;
-  }
-}
-
 /* New scroll */
 
 #team {
@@ -514,6 +487,12 @@ section .section-title {
 }
 
 /* Media Qerey */
+@media screen and (max-width: 1366px) {
+  .logoImage {
+    height: 9vh;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .contener .about,
   .contener .portfolio {
@@ -523,7 +502,32 @@ section .section-title {
     transform: scale(1);
   }
 }
-/* 549 */
+@media screen and (max-width: 800px) {
+  .header {
+    justify-content: space-between;
+  }
+  .burderBtn {
+    display: block;
+  }
+  .header-right {
+    display: none;
+  }
+  .header a {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contener .about,
+  .contener .portfolio {
+    flex-direction: column;
+  }
+  .contener .about img,
+  .contener .portfolio img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .contener .gallery li {
     height: auto;

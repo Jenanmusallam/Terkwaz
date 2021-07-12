@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignement Five</title>
+    <title>Musallam Photography</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./terkwaz.png" type="image/x-icon">
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- Using Icon Laibrary(font awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         * {
@@ -113,6 +118,10 @@
             <a href="./index.html#Gallery">Gallery</a>
             <a class="active" href="./gallery.html">Photos</a>
         </div>
+        <div class="toggleMobileMenu">
+            <div class="burderBtn"><img src="./list.png" alt="" srcset=""></div>
+            <div class="closeBtn"><img src="https://static.thenounproject.com/png/26894-200.png" alt="" srcset=""></div>
+        </div>
     </div>
     <div class="contener" data-aos="zoom-in-down">
         <header>
@@ -175,13 +184,7 @@
     </div>
     <!-- Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 400,
-            delay: 0,
-            duration: 1000
-        });
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
