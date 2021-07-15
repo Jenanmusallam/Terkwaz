@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background: url(./bg1.jpeg);
+  font-family: cursive;
+  font-weight: bold;
+}
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.342);
+  width: 100%;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+}
+header ul li {
+  list-style: none;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(236, 91, 152, 0.883);
+  margin: auto 0;
+  width: 20%;
+  color: rgb(255, 255, 255);
+}
+ul li {
+  list-style: none;
+}
+header ul li img {
+  height: 6vh;
+  margin-top: 0.3em;
+}
+/* Contener */
+.contener {
+  background-color: rgba(165, 42, 42, 0.075);
+  min-height: 80vh;
+}
+.contener .space {
+  height: 12vh;
+}
+.boxs {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.right,
+.center,
+.left {
+  margin: 2rem;
+  /* height: 50vh; */
+  width: 30vw;
+  background-color: rgba(99, 190, 175, 0.685);
+  border: 2px solid black;
+}
+.right {
+  padding: 3rem;
+}
+.right h3 {
+  margin: 2rem;
+  font-size: 1.5em;
+}
+.right input {
+  cursor: pointer;
+  background-color: white;
+  width: 80%;
+  height: 4vh;
+  border: 0;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.466);
+  border-radius: 10px;
+  font-size: 1em;
+  display: block;
+  margin: auto;
+}
+.right button {
+  display: block;
+  margin: 1rem auto;
+  background-color: #a64557cc;
+  font-family: cursive;
+  color: aliceblue;
+  font-size: 1.2em;
+  width: 80%;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.466);
+  height: 4vh;
+  border: 0;
+  border-radius: 16px;
+}
+.right button:hover,
+.right button:active {
+  background-color: #a64557;
+}
+.right button:active {
+  transform: scale(0.95);
+}
+.center,
+.left {
+  padding: 1rem;
+}
+.center h3,
+.left h3 {
+  margin: 2rem;
+  font-size: 1.9em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.center ul li {
+  text-align: left;
+}
+
+/* New  */
+/* Task list */
+.boxs li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1px 0;
+  border-bottom: 1px solid #eee;
+}
+.boxs li > input[type="checkbox"] {
+  margin: 0 0.5rem;
+  position: relative;
+  top: 15px;
+}
+.boxs li > label {
+  font-size: 18px;
+  line-height: 40px;
+  padding: 0 1rem;
+}
+.boxs li > .delete:hover {
+  color: #cf2323;
+  background-color: white;
+}
+.boxs li > .delete {
+  background-color: rgb(180, 18, 18);
+  padding: 0.3rem;
+  color: white;
+  border: 0;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  height: 4vh;
+}
+/* Completed */
+.boxs #completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Footer */
+footer {
+  background-color: #a64557;
+  padding: 1rem;
+  position: relative;
+  bottom: 0px;
+}
+footer .social {
+  margin-bottom: 1rem;
+}
+footer .social a i {
+  font-size: 2em;
+  color: rgba(238, 238, 238, 0.424);
+  margin: 0.2rem;
+}
+footer .social a i:hover {
+  color: rgb(255, 255, 255);
+}
+footer .copyright {
+  color: #daa7ab;
+}
+
+/* Media Qerey */
+@media screen and (max-width: 860px) {
+  .right,
+  .center,
+  .left {
+    margin: 0rem;
+  }
+  header ul li {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header ul li {
+    font-size: 1.5em;
+  }
+  .boxs {
+    flex-direction: column;
+  }
+  .right,
+  .center,
+  .left {
+    margin: 1rem;
+    width: auto;
+  }
+}
