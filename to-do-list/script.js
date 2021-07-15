@@ -1,9 +1,8 @@
 
-const taskInput = document.getElementById("new-student");//Add a new task.
-const addButton = document.getElementsByTagName("button")[0];//first button
-const addToDo = document.getElementById("todo-tasks");//ul of #incomplete-tasks
-const doneName = document.getElementById("done-tasks");//completed-tasks
-
+const taskInput = document.querySelector("#new-student"); //Add a new student.
+const addButton = document.querySelector('#add-btn');
+const addToDo = document.querySelector("#todo-tasks"); //ul to do list
+const doneName = document.querySelector("#done-tasks");// ul completed to do list
 
 //New task list item
 const createNewToDoList = (dataToDo) => {
@@ -18,53 +17,59 @@ const createNewToDoList = (dataToDo) => {
     checkBox.type = "checkbox";
     deleteButton.innerText = "Delete";
     deleteButton.className = "delete";
-    //and appending.
+
+    // Using.
     newTodo.appendChild(checkBox);
     newTodo.appendChild(label);
     newTodo.appendChild(deleteButton);
     return newTodo;
 }
 
-
 const addUser = () => {
     const newTodo = createNewToDoList(taskInput.value);
     if (taskInput.value != '') {
         addToDo.appendChild(newTodo);
-        bindTaskEvents(newTodo, doneUser);
+        console.log(addToDo);
+        events(newTodo, doneUser);
         taskInput.value = "";
     }
     else {
-        alert('Enter name of Student');
+        alert('Enter Name of Student');
     }
 }
 
-//Delete 
+//Delete User
 const deleteUser = function () {
-    const newTodo = this.parentNode;
-    const ul = newTodo.parentNode;
-    ul.removeChild(newTodo);
+    const user = this.parentNode;
+    const ul = user.parentNode;
+    ul.removeChild(user);
 }
 
-//Mark task completed
+//Mark task completed ✔
 const doneUser = function () {
-    const newTodo = this.parentNode;
-    doneName.appendChild(newTodo);
-    bindTaskEvents(newTodo, backTodo);
+    const user = this.parentNode;
+    doneName.appendChild(user);
+    events(user, backTodo);
 }
 
+//Uncheck box in user ❌
 const backTodo = function () {
-    const newTodo = this.parentNode;
-    addToDo.appendChild(newTodo);
-    bindTaskEvents(newTodo, doneUser);
+    const user = this.parentNode;
+    addToDo.appendChild(user);
+    events(user, doneUser);
 }
 
-const bindTaskEvents = function (tasknewTodo, checkBoxEventHandler) {
+// checkBox and Delete
+const events = function (tasknewTodo, checkBoxEvent) {
     const checkBox = tasknewTodo.querySelector("input[type=checkbox]");
     const deleteButton = tasknewTodo.querySelector("button.delete");
-    deleteButton.onclick = deleteUser;
-    checkBox.onchange = checkBoxEventHandler;
+    deleteButton.onclick = deleteUser; // Call Delete Function
+    checkBox.onchange = checkBoxEvent;
 }
+
+// Button Add
 addButton.addEventListener("click", addUser);
+
 document.addEventListener("keydown", (event) => {
     if (event.key === 'Enter') {
         addUser();
