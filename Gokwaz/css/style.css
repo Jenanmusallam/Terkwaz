@@ -386,6 +386,7 @@ footer {
   position: relative;
 }
 .footer-logo {
+  width: 23vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -440,6 +441,9 @@ footer .social img:hover {
   #home-services {
     margin-bottom: 5rem !important;
     margin-top: 1rem !important;
+  }
+  .bag-gokwas {
+    height: 60vh;
   }
 }
 @media (max-width: 1200px) {
