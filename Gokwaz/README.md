@@ -2,28 +2,6 @@
 
 Gokwaz Landing page UI that's created by Jenan using HTML, CSS, and bootstrap
 
-### What is this repository for? ###
+https://jenanmusallam.github.io/Terkwaz/Gokwaz
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+![](https://github.com/Jenanmusallam/Terkwaz/blob/main/Gokwaz/gokwaz.png)
